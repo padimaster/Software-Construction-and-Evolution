@@ -11,6 +11,7 @@ To facilitate communication between containers, establish a Docker network named
 ``` bash:
 docker network create net-wp
 ```
+![docker volume inspect](https://github.com/padimaster/Software-Construction-and-Evolution/blob/main/blob/wp-net.png?raw=true)
 
 ### 2. MySQL Container:
 
@@ -37,17 +38,22 @@ docker run -d --name wordpress-container --network net-wp -v <host_volume_path>:
 <host_port>: Map a host port to the container's port (e.g., 8080:80).
 Customize Wordpress:
 
+![docker volume inspect](https://github.com/padimaster/Software-Construction-and-Evolution/blob/main/blob/wp-containers.png?raw=true)
+
 Access the Wordpress site at http://localhost:<host_port> in your web browser. Customize the appearance and add an entry.
+
+![docker volume inspect](https://github.com/padimaster/Software-Construction-and-Evolution/blob/main/blob/wp-set-up.png?raw=true)
 
 ### 4. Remove and Recreate Container:
 
 Experiment with container removal and recreation:
 
-```bash:
-docker rm -f wordpress-container
+```bash
+docker rm -f wp-site
 ```
 
 Recreate the container using the same command as in step 3. Observe the behavior and data persistence.
+![docker volume inspect](https://github.com/padimaster/Software-Construction-and-Evolution/blob/main/blob/wp-site.png?raw=true)
 
 ## Summary:
 Explore the seamless interaction between Docker containers, networks, and volumes in deploying and managing a Wordpress application. Understand how persistent data storage enhances the reliability and consistency of your Dockerized applications. Feel free to experiment and contribute improvements to this exercise. 

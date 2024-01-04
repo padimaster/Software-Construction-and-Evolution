@@ -12,9 +12,12 @@ Use the following Docker command to create a container with a host volume. Repla
 docker run -d --name <container_name> --publish <ports_mapping> -v <host_volume_path>:/usr/share/nginx/html <nombre_imagen>
 ```
 
-<container_name>: Choose a name for your container.
-<ports_mapping>: Define the port mapping, e.g., 8080:80 to map host port 8080 to container port 80.
-<host_volume_path>: Specify the path to the folder on your host machine where the HTML content is located. Use \ as the directory separator.
+![nginx website](https://github.com/padimaster/Software-Construction-and-Evolution/blob/main/blob/nginx-docker.png?raw=true)
+
+**<container_name>:** Choose a name for your container.
+
+**<ports_mapping>:** Define the port mapping, e.g., 8080:80 to map host port 8080 to container port 80.
+**<host_volume_path>:** Specify the path to the folder on your host machine where the HTML content is located. Use **\\** as the directory separator.
 
 ### 2. Access Nginx Server:
 
@@ -27,6 +30,8 @@ Download a free HTML template from html5up.net. Unzip the template and place it 
 ### 4. Access Nginx Server Again:
 
 Visit http://localhost:<ports_mapping> in your web browser. Observe the changes made to the Nginx server.
+
+![nginx website](https://github.com/padimaster/Software-Construction-and-Evolution/blob/main/blob/nginx-app.png?raw=true)
 
 ### 5. Remove the Container:
 
