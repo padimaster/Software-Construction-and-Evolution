@@ -1,3 +1,5 @@
+**Author:** Alex Padilla
+
 # Exercise 2: Wordpress with Docker Networks and Volumes
 
 In this exercise, you'll delve into deploying a Wordpress application using Docker containers, emphasizing the use of networks and volumes for efficient data management.
