@@ -50,6 +50,6 @@ docker rm -f wordpress-container
 Recreate the container using the same command as in step 3. Observe the behavior and data persistence.
 
 ## Summary:
-Explore the seamless interaction between Docker containers, networks, and volumes in deploying and managing a Wordpress application. Understand how persistent data storage enhances the reliability and consistency of your Dockerized applications. 
+Explore the seamless interaction between Docker containers, networks, and volumes in deploying and managing a Wordpress application. Understand how persistent data storage enhances the reliability and consistency of your Dockerized applications. Feel free to experiment and contribute improvements to this exercise. 
 
-Feel free to experiment and contribute improvements to this exercise. Happy Dockerizing!
+***Happy Dockerizing!***

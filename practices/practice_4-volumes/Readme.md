@@ -16,6 +16,23 @@ Explore the process of building and running a Wordpress server using Docker. Thi
 
 Learn essential volume operations in Docker. This exercise covers tasks such as mounting volumes, inspecting volume details, and managing data persistence within Docker containers.
 
+#### Create Volume
+```bash
+docker run -d --name server-postgres -e POSTGRES_DB=db_drupal -e POSTGRES_PASSWORD=12345 -e POSTGRES_USER=user_drupal -v vol-postgres:/var/lib/postgresql/data --network net-postgres postgres
+```
+
+##### 3.1 Mountpoint of vol-postgres:
+After creating the Docker volume with the provided command (docker volume create vol-postgres), the system automatically chooses the Mountpoint location. You can verify it by running the following command:
+```bash
+docker volume inspect vol-postgres
+```
+This command will provide detailed information about the volume, including the Mountpoint path.
+![docker volume inspect](https://github.com/padimaster/Software-Construction-and-Evolution/blob/main/inspect-vol.png?raw=true)
+
+##### 3.2 Accessing the Mountpoint:
+/var/lib/docker/volumes/vol-postgres/_data
+
+
 ### 4. Anonymous Volume
 
 Dive into the concept of anonymous volumes in Docker. Understand how to create and utilize anonymous volumes for temporary data storage within containers.
